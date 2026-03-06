@@ -12,6 +12,7 @@ class CustomTangentGraph(Scene):
                 "include_tip": True
             }
         )
+        
 
         def safe_tan(x):
             if abs(x - np.pi/2) < 0.1 or abs(x + np.pi/2) < 0.1:
