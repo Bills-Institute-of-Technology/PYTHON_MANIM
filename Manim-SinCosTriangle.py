@@ -1,6 +1,6 @@
 from manim import *
 
-class CircleWithTriangle(Scene):
+class SinCosTriangle(Scene):
     def construct(self):
         # Create the circle
         circle = Circle(radius=2, color=BLUE)
@@ -34,3 +34,6 @@ class CircleWithTriangle(Scene):
         # Animate the radius line rotating around the circle
         self.play(Rotate(radius_line, angle=2 * PI, about_point=ORIGIN, run_time=6))
         self.wait()
+
+# To render this scene:
+# manim -pql Manim-SinCosTriangle.py SinCosTriangle

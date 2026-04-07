@@ -1,6 +1,6 @@
 from manim import *
 
-class ThreeDSurfacePlot(ThreeDScene):
+class GaussianSurface(ThreeDScene):
     def construct(self):
         resolution_fa = 24
         self.set_camera_orientation(phi=75 * DEGREES, theta=-30 * DEGREES)
@@ -25,3 +25,6 @@ class ThreeDSurfacePlot(ThreeDScene):
         gauss_plane.set_fill_by_checkerboard(ORANGE, BLUE, opacity=0.5)
         axes = ThreeDAxes()
         self.add(axes,gauss_plane)
+
+# To render this scene:
+# manim -pql Manim-GaussianSurface.py GaussianSurface

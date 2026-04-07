@@ -1,6 +1,6 @@
 from manim import *
 
-class SigmoidFunction(Scene):
+class SigmoidFunc(Scene):
     def construct(self):
         # Define weight and bias
         weight = 1
@@ -34,5 +34,5 @@ class SigmoidFunction(Scene):
         self.play(Create(sigmoid_graph), run_time=2)
         self.wait()
 
-# To render the scene, use the following command in your terminal:
-# manim -pql your_script.py SigmoidFunction
+# To render this scene:
+# manim -pql Manim-SigmoidFunc.py SigmoidFunc

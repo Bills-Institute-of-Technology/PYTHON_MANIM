@@ -29,5 +29,5 @@ class SineWave(Scene):
         self.play(Create(sine_graph), run_time=2)
         self.wait()
 
-# To render the scene, use the following command in your terminal:
-# manim -pql Manim-Sine.py SineWave
+# To render this scene:
+# manim -pql Manim-SineWave.py SineWave

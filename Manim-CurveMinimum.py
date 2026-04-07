@@ -1,6 +1,6 @@
 from manim import *
 
-class DotAlongCurve(Scene):
+class CurveMinimum(Scene):
     def construct(self):
         ax = Axes(
             x_range=[0, 10], y_range=[0, 100, 10], axis_config={"include_tip": False}
@@ -23,3 +23,6 @@ class DotAlongCurve(Scene):
         self.add(ax, labels, graph, dot)
         self.play(t.animate.set_value(x_space[minimum_index]))
         self.wait()
+
+# To render this scene:
+# manim -pql Manim-CurveMinimum.py CurveMinimum

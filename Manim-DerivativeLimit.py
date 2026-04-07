@@ -1,7 +1,7 @@
 from manim import *
 import numpy as np
 
-class RiemannSumScene(Scene):
+class DerivativeLimit(Scene):
     def construct(self):
         # Add header text for limit definition of derivative
         header = MathTex(
@@ -88,3 +88,5 @@ class RiemannSumScene(Scene):
         
         # Final pause to show the most accurate approximation
         self.wait(2) 
+# To render this scene:
+# manim -pql Manim-DerivativeLimit.py DerivativeLimit

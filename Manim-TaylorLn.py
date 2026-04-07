@@ -2,7 +2,7 @@
 from manim import *
 import numpy as np
 
-class TaylorPoly(Scene):
+class TaylorLn(Scene):
     def construct(self):
         axes = Axes(
             x_range=[-2, 4],
@@ -111,3 +111,5 @@ class TaylorPoly(Scene):
         self.play(Transform(graph_label, MathTex(r"P_5(x) = \ln(C) + \frac{1}{2}(x - C) - \frac{1}{8}(x - C)^2 + \frac{1}{24}(x - C)^3 - \frac{1}{64}(x - C)^4 + \frac{1}{160}(x - C)^5", font_size=24).to_edge(UL, buff=0.5)), run_time=1)
         self.play(Create(graph_P_5, run_time=2))
 
+# To render this scene:
+# manim -pql Manim-TaylorLn.py TaylorLn

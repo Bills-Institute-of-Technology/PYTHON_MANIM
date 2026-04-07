@@ -1,7 +1,7 @@
 from manim import *
 import numpy as np
 
-class PolarCircle(Scene):
+class PolarTangent(Scene):
     def construct(self):
         # Create polar coordinate grid
         r_max = 3        
@@ -103,3 +103,6 @@ class PolarCircle(Scene):
         initial_tangent.remove_updater(update_tangent)
 
         #self.wait(2)
+
+# To render this scene:
+# manim -pql Manim-PolarTangent.py PolarTangent

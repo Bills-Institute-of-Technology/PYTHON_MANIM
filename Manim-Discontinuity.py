@@ -1,6 +1,6 @@
 from manim import *
 
-class DiscontinuityScene01(Scene):
+class Discontinuity(Scene):
     def construct(self):
         # Create the coordinate system
         axes = Axes(
@@ -35,3 +35,5 @@ class DiscontinuityScene01(Scene):
 
         self.play(Create(axes), Create(x_label), Create(y_label))
         
+# To render this scene:
+# manim -pql Manim-Discontinuity.py Discontinuity

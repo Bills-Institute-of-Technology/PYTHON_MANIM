@@ -1,6 +1,6 @@
 from manim import *
 
-class ThreeDLightSourcePosition(ThreeDScene):
+class LitSphere(ThreeDScene):
     def construct(self):
         axes = ThreeDAxes()
         sphere = Surface(
@@ -14,3 +14,6 @@ class ThreeDLightSourcePosition(ThreeDScene):
         self.renderer.camera.light_source.move_to(3*IN) # changes the source of the light
         self.set_camera_orientation(phi=75 * DEGREES, theta=30 * DEGREES)
         self.add(axes, sphere)
+
+# To render this scene:
+# manim -pql Manim-LitSphere.py LitSphere

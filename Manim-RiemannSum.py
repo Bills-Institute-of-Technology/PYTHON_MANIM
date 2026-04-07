@@ -1,6 +1,6 @@
 from manim import *
 
-class RiemannSumApproximation(Scene):
+class RiemannSum(Scene):
     def construct(self):
         # Define the function and interval
         func = lambda x: x**2
@@ -42,3 +42,6 @@ class RiemannSumApproximation(Scene):
 
         # End scene
         self.wait(2)
+
+# To render this scene:
+# manim -pql Manim-RiemannSum.py RiemannSum

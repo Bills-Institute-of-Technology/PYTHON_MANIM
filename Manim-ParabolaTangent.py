@@ -1,6 +1,6 @@
 from manim import *
 
-class TangentLineExample(Scene):
+class ParabolaTangent(Scene):
     def construct(self):
         axes = Axes(
             x_range=[-2*PI, 2*PI, PI/3],
@@ -25,3 +25,6 @@ class TangentLineExample(Scene):
 
         self.play(Create(axes))
         self.play(Create(graph), run_time=3)
+
+# To render this scene:
+# manim -pql Manim-ParabolaTangent.py ParabolaTangent

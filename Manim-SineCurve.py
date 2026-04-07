@@ -1,6 +1,6 @@
 from manim import *
 
-class SineWave(Scene):
+class SineCurve(Scene):
     def construct(self):
         # Create axes
         axes = Axes(
@@ -20,5 +20,5 @@ class SineWave(Scene):
         self.play(Create(sine_graph), run_time=2)
         self.wait()
 
-# To render the scene, use the following command in your terminal:
-# manim -pql TRIG\SIN-01.py SineWave
+# To render this scene:
+# manim -pql Manim-SineCurve.py SineCurve

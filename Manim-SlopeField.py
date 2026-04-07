@@ -117,4 +117,4 @@ class SlopeField(Scene):
                 self.wait(0.5)
 
 # To render the scene, use the following command in your terminal:
-# manim -pql DE-SlopeField.py SlopeField 
+# manim -pql Manim-SlopeField.py SlopeField

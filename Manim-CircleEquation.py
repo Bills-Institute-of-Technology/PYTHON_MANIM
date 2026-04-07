@@ -30,5 +30,5 @@ class CircleEquation(Scene):
         self.play(Create(circle), run_time=2)
         self.wait()
 
-# To render the scene, use the following command in your terminal:
-# manim -pql Manim-Circle.py CircleEquation
+# To render this scene:
+# manim -pql Manim-CircleEquation.py CircleEquation

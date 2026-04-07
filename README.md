@@ -36,39 +36,40 @@ manim <script_name.py> <SceneClassName>
 ```
 For example:
 ```powershell
-manim CSC-01.py CosecantSquaredGraph
+manim Manim-CosecantGraph.py CosecantGraph
 ```
 
 ## Scene Inventory
 
 | Scene Class | File | Math / Topic Summary |
-| --- | --- | --- |
-| `CosecantSquaredGraph` | `CSC-01.py` | Plots a cosecant-based trig graph with discontinuities and pi-labeled x-axis. |
-| `SlopeField` | `DE-SlopeField.py` | Builds slope fields for first-order differential equations (`dy/dx = -x/y`, `x+y`, `y`). |
-| `DotAlongCurve` | `DotAlongCurve.py` | Tracks a point on a quadratic curve and moves it to the parabola's minimum. |
-| `EpsilonDeltaLimitScene` | `EpsilonDeltaLimitProof_01.py` | Visualizes epsilon-delta limit neighborhoods around `x=C` and `y=L` on a function graph. |
-| `CircleEquation` | `Manim-Circle.py` | Draws the implicit circle `x^2 + y^2 = 1` on coordinate axes. |
-| `SigmoidFunction` | `Manim-Sigmoid01.py` | Plots the logistic sigmoid with configurable weight and bias parameters. |
-| `SineWave` | `Manim-Sine.py` | Graphs `sin(x)` over `[-pi, pi]` with key pi-based angle labels. |
+| :--- | :--------------------------- | :--- |
+| `CosecantGraph` | `Manim-CosecantGraph.py` | Plots a cosecant-based trig graph with discontinuities and pi-labeled x-axis. |
+| `SlopeField` | `Manim-SlopeField.py` | Builds slope fields for first-order differential equations (`dy/dx = -x/y`, `x+y`, `y`). |
+| `CurveMinimum` | `Manim-CurveMinimum.py` | Tracks a point on a quadratic curve and moves it to the parabola's minimum. |
+| `EpsilonDelta` | `Manim-EpsilonDelta.py` | Visualizes epsilon-delta limit neighborhoods around `x=C` and `y=L` on a function graph. |
+| `CircleEquation` | `Manim-CircleEquation.py` | Draws the implicit circle `x^2 + y^2 = 1` on coordinate axes. |
+| `SigmoidPlot` | `Manim-SigmoidPlot.py` | Plots the logistic sigmoid with configurable weight and bias parameters. |
+| `SineWave` | `Manim-SineWave.py` | Graphs `sin(x)` over `[-pi, pi]` with key pi-based angle labels. |
 | `UnitCircle` | `Manim-UnitCircle.py` | Animates radius rotation on a unit circle with angle `theta` annotation. |
-| `DiscontinuityScene01` | `Python-Discontinuity.py` | Shows a removable discontinuity (hole) in a rational function graph. |
-| `PolarCircle` | `Python-PolarCircle.py` | Uses polar coordinates to animate a point on a circle with tangent behavior. |
-| `RiemannSumApproximation` | `RSum01.py` | Approximates area under `y=x^2` using left Riemann rectangles with decreasing `dx`. |
-| `SineWave` | `SIN-01.py` | Basic sine curve plot over `[-pi, pi]`. |
-| `SigmoidFunction` | `Sigmoid.py` | Logistic sigmoid plot with displayed weight and bias values. |
-| `CustomTangentGraph` | `TAN-01.py` | Tangent-function style graph with asymptote-safe clipping behavior. |
-| `TangentAnimation` | `TangentLine01.py` | Animates motion along the cubic function `f(x)=x^3` (tangent-focused setup). |
-| `TangentLineExample` | `Tangent_01.py` | Draws a parabola with a tangent line at a selected point. |
-| `TaylorPoly` | `TaylorPoly-ln(x).py` | Compares `ln(x)` with increasing-degree Taylor polynomial approximations around `C=2`. |
-| `FixedInFrameMObjectTest` | `ThreeDimensional01.py` | 3D axes scene demonstrating fixed-in-frame text overlay. |
-| `ThreeDLightSourcePosition` | `ThreeDimensional02.py` | 3D parametric surface scene with adjusted light-source position. |
-| `ThreeDSurfacePlot` | `ThreeDimensional03.py` | Plots a Gaussian-like 3D surface over the `(x,y)` plane. |
-| `CircleWithRotatingRadius` | `UnitCircle.py` | Rotates a radius line around a circle to illustrate full-angle sweep. |
-| `CircleWithTriangle` | `UnitCircle02.py` | Animates radius rotation with dynamic sine/cosine triangle projections. |
-| `SquareToCircle` | `manim01.py` | Demonstrates geometric transformation from square to circle. |
-| `Updaters` | `manim01.py` | Shows updater-driven motion of a `ln(2)` math label and surrounding box. |
-| `Scaling` | `manim01.py` | Demonstrates geometric scaling and repositioning of basic shapes. |
-| `RiemannSumScene` | `riemann_sum.py` | Shows Riemann-sum convergence for `y=x^2` alongside exact integral area/error. |
+| `Discontinuity` | `Manim-Discontinuity.py` | Shows a removable discontinuity (hole) in a rational function graph. |
+| `PolarTangent` | `Manim-PolarTangent.py` | Uses polar coordinates to animate a point on a circle with tangent behavior. |
+| `RiemannSum` | `Manim-RiemannSum.py` | Approximates area under `y=x^2` using left Riemann rectangles with decreasing `dx`. |
+| `SineCurve` | `Manim-SineCurve.py` | Basic sine curve plot over `[-pi, pi]`. |
+| `SigmoidFunc` | `Manim-SigmoidFunc.py` | Logistic sigmoid plot with displayed weight and bias values. |
+| `TangentGraph` | `Manim-TangentGraph.py` | Tangent-function style graph with asymptote-safe clipping behavior. |
+| `CubicTangent` | `Manim-CubicTangent.py` | Animates motion along the cubic function `f(x)=x^3` (tangent-focused setup). |
+| `ParabolaTangent` | `Manim-ParabolaTangent.py` | Draws a parabola with a tangent line at a selected point. |
+| `TaylorLn` | `Manim-TaylorLn.py` | Compares `ln(x)` with increasing-degree Taylor polynomial approximations around `C=2`. |
+| `Fixed3DText` | `Manim-Fixed3DText.py` | 3D axes scene demonstrating fixed-in-frame text overlay. |
+| `LitSphere` | `Manim-LitSphere.py` | 3D parametric surface scene with adjusted light-source position. |
+| `GaussianSurface` | `Manim-GaussianSurface.py` | Plots a Gaussian-like 3D surface over the `(x,y)` plane. |
+| `RadiusSweep` | `Manim-RadiusSweep.py` | Rotates a radius line around a circle to illustrate full-angle sweep. |
+| `SinCosTriangle` | `Manim-SinCosTriangle.py` | Animates radius rotation with dynamic sine/cosine triangle projections. |
+| `SquareCircle` | `Manim-BasicShapes.py` | Demonstrates geometric transformation from square to circle. |
+| `LabelUpdater` | `Manim-BasicShapes.py` | Shows updater-driven motion of a `ln(2)` math label and surrounding box. |
+| `ShapeScaling` | `Manim-BasicShapes.py` | Demonstrates geometric scaling and repositioning of basic shapes. |
+| `DerivativeLimit` | `Manim-DerivativeLimit.py` | Shows Riemann-sum convergence for `y=x^2` alongside exact integral area/error. |
+| `VolumeRevolution` | `Manim-VolumeRevolution.py` | 3D volume of revolution: plots `f(x)=4x²+5`, draws left Riemann rectangles (Δx=0.2) on `[2,4]`, then rotates both around the x-axis to illustrate the disc-method integral `V=π∫[f(x)]²dx`. |
 
 ## Testing
 

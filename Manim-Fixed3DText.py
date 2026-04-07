@@ -1,6 +1,6 @@
 from manim import *
 
-class FixedInFrameMObjectTest(ThreeDScene):
+class Fixed3DText(ThreeDScene):
     def construct(self):
         axes = ThreeDAxes()
         self.set_camera_orientation(phi=75 * DEGREES, theta=-45 * DEGREES)
@@ -9,3 +9,6 @@ class FixedInFrameMObjectTest(ThreeDScene):
         text3d.to_corner(UL)
         self.add(axes)
         self.wait()
+
+# To render this scene:
+# manim -pql Manim-Fixed3DText.py Fixed3DText

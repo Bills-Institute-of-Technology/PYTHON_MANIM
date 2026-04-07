@@ -1,7 +1,7 @@
 from manim import *
 import numpy as np
 
-class EpsilonDeltaLimitScene(Scene):
+class EpsilonDelta(Scene):
     def construct(self):
         # Create the coordinate system
         axes = Axes(
@@ -179,3 +179,6 @@ class EpsilonDeltaLimitScene(Scene):
             rate_func=linear
         )
         self.wait(1)  # Pause to show final converged state
+
+# To render this scene:
+# manim -pql Manim-EpsilonDelta.py EpsilonDelta

@@ -1,6 +1,6 @@
 from manim import *
 
-class CircleWithRotatingRadius(Scene):
+class RadiusSweep(Scene):
     def construct(self):
         # Create the circle
         circle = Circle(radius=2, color=BLUE)  # Circle centered at origin, radius=2
@@ -17,3 +17,6 @@ class CircleWithRotatingRadius(Scene):
         # Animate the radius line rotating 360 degrees
         self.play(Rotate(radius_line, angle=2*PI, about_point=ORIGIN, run_time=4))
         self.wait()
+
+# To render this scene:
+# manim -pql Manim-RadiusSweep.py RadiusSweep

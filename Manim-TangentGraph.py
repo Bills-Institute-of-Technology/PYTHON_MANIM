@@ -1,7 +1,13 @@
 from manim import *
 import numpy as np
 
-class CustomTangentGraph(Scene):
+# NOTE:
+# This scene will not render.
+# This remains in the current state as a check for the ./tests/test_scenes.py script.
+# This ensure that failures to compile are correctly detected and logged.
+
+
+class TangentGraph(Scene):
     def construct(self):
         axes = Axes(
             x_range=[-2*PI, 2*PI, PI/3],
@@ -23,3 +29,6 @@ class CustomTangentGraph(Scene):
         
         self.play(Create(axes))
         self.play(Create(tan_graph), run_time=2)
+
+# To render this scene:
+# manim -pql Manim-TangentGraph.py TangentGraph

@@ -1,7 +1,7 @@
 from manim import *
 import numpy as np
 
-class CosecantSquaredGraph(Scene):
+class CosecantGraph(Scene):
     def construct(self):
         # Create axes with pi units on x-axis
         axes = Axes(
@@ -56,3 +56,6 @@ class CosecantSquaredGraph(Scene):
         self.play(Write(graph_label))
         self.play(Create(graph), run_time=3)
         self.wait(2)
+
+# To render this scene:
+# manim -pql Manim-CosecantGraph.py CosecantGraph

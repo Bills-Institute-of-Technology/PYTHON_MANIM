@@ -1,6 +1,6 @@
 from manim import *
 
-class TangentAnimation(Scene):
+class CubicTangent(Scene):
     def construct(self):
         # Create axes
         axes = Axes(
@@ -56,5 +56,5 @@ class TangentAnimation(Scene):
         self.play(dot.animate.move_to(axes.c2p(3, func(3))), run_time=5, rate_func=linear)
         self.wait()
 
-# To render the scene, use the following command in your terminal:
-# manim -pql CALC\TangentLine01.py TangentAnimation
+# To render this scene:
+# manim -pql Manim-CubicTangent.py CubicTangent

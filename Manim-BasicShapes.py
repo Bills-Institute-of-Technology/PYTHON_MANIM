@@ -1,6 +1,6 @@
 from manim import *
 
-class SquareToCircle(Scene):
+class SquareCircle(Scene):
     def construct(self):
         square = Square()
         circle = Circle()
@@ -9,7 +9,7 @@ class SquareToCircle(Scene):
         self.play(Transform(square, circle))
         self.play(FadeOut(circle))
 
-class Updaters(Scene):
+class LabelUpdater(Scene):
     def construct(self):
         my_number = MathTex("ln(2)")
         my_box = always_redraw(lambda: SurroundingRectangle(my_number, color=BLUE, fill_opacity=0.4, fill_color=RED, buff=0.5))
@@ -19,7 +19,7 @@ class Updaters(Scene):
         self.play(my_number.animate.shift(RIGHT * 2), run_time=2.0)
         self.wait()
 
-class Scaling(Scene):
+class ShapeScaling(Scene):
      def contruct(self):
          my_title = Tex("Bills Institute of Technology").to_edge(UL,buff=0.5)
 
@@ -34,3 +34,8 @@ class Scaling(Scene):
          self.play(my_title.animate.to_edge(UR),run_time=2)
          self.play(my_square.animate.scale(2), my_triangle.animate.to_edge(DL),run_time=3)
          self.wait()
+
+# To render individual scenes from this file:
+# manim -pql Manim-BasicShapes.py SquareCircle
+# manim -pql Manim-BasicShapes.py LabelUpdater
+# manim -pql Manim-BasicShapes.py ShapeScaling
