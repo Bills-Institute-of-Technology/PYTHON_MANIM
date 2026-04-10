@@ -70,6 +70,7 @@ manim Manim-CosecantGraph.py CosecantGraph
 | `ShapeScaling` | `Manim-BasicShapes.py` | Demonstrates geometric scaling and repositioning of basic shapes. |
 | `DerivativeLimit` | `Manim-DerivativeLimit.py` | Shows Riemann-sum convergence for `y=x^2` alongside exact integral area/error. |
 | `VolumeRevolution` | `Manim-VolumeRevolution.py` | 3D volume of revolution: plots `f(x)=4x²+5`, draws left Riemann rectangles (Δx=0.2) on `[2,4]`, then rotates both around the x-axis to illustrate the disc-method integral `V=π∫[f(x)]²dx`. |
+| `Bernoulli` | `Manim-Bernoulli.py` | Animates the compound interest formula `(1+r/n)^n` for r=0.05, 0.50, and 1.00 across n compounding intervals, showing each curve converging toward a limit and illustrating Bernoulli's discovery of `e`. |
 
 ## Testing
 
