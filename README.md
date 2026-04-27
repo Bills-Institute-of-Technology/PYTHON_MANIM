@@ -71,6 +71,9 @@ manim Manim-CosecantGraph.py CosecantGraph
 | `DerivativeLimit` | `Manim-DerivativeLimit.py` | Shows Riemann-sum convergence for `y=x^2` alongside exact integral area/error. |
 | `VolumeRevolution` | `Manim-VolumeRevolution.py` | 3D volume of revolution: plots `f(x)=4x²+5`, draws left Riemann rectangles (Δx=0.2) on `[2,4]`, then rotates both around the x-axis to illustrate the disc-method integral `V=π∫[f(x)]²dx`. |
 | `Bernoulli` | `Manim-Bernoulli.py` | Animates the compound interest formula `(1+r/n)^n` for r=0.05, 0.50, and 1.00 across n compounding intervals, showing each curve converging toward a limit and illustrating Bernoulli's discovery of `e`. |
+| `ComplexPlane01` | `Manim-ComplexPlane01.py` | Draws the complex plane with `Re(s)` / `Im(s)` axes, shades the critical strip `0 < Re(s) < 1`, marks the critical line `Re(s) = 1/2` in yellow, then animates vertical lines transforming into parabolas under the mapping `f(z) = z²`. |
+| `ComplexPlane02` | `Manim-ComplexPlane02.py` | Same complex plane framework; animates `f(z) = e^z` in two phases: vertical lines curl into concentric circles of radius `e^a`, then horizontal lines fan out into rays at angle `b` — together revealing the Cartesian-to-polar grid transformation. |
+| `ComplexPlane03` | `Manim-ComplexPlane03.py` | Same complex plane framework; animates the inversion map `f(z) = 1/z` in two phases: vertical lines `Re(z)=a` collapse into circles centred on the real axis, then horizontal lines `Im(z)=b` collapse into circles centred on the imaginary axis — all circles pass through the origin. |
 
 ## Testing
 
