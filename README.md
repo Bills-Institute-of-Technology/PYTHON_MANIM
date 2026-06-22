@@ -74,6 +74,8 @@ manim Manim-CosecantGraph.py CosecantGraph
 | `ComplexPlane01` | `Manim-ComplexPlane01.py` | Draws the complex plane with `Re(s)` / `Im(s)` axes, shades the critical strip `0 < Re(s) < 1`, marks the critical line `Re(s) = 1/2` in yellow, then animates vertical lines transforming into parabolas under the mapping `f(z) = z²`. |
 | `ComplexPlane02` | `Manim-ComplexPlane02.py` | Same complex plane framework; animates `f(z) = e^z` in two phases: vertical lines curl into concentric circles of radius `e^a`, then horizontal lines fan out into rays at angle `b` — together revealing the Cartesian-to-polar grid transformation. |
 | `ComplexPlane03` | `Manim-ComplexPlane03.py` | Same complex plane framework; animates the inversion map `f(z) = 1/z` in two phases: vertical lines `Re(z)=a` collapse into circles centred on the real axis, then horizontal lines `Im(z)=b` collapse into circles centred on the imaginary axis — all circles pass through the origin. |
+| `ComplexPlaneEuler01` | `Manim-ComplexPlane-Euler01.py` | 3D Euler-formula visualization with `x` as input angle, `\sin(x)` in the `x-y` plane, `\cos(x)` in the `x-z` plane, and a red helix `(x, \sin x, \cos x)` showing their combined relationship. |
+| `ComplexPlaneEuler02` | `Manim-ComplexPlane-Euler02.py` | Extends the Euler helix scene with a moving point on `(x, \sin x, \cos x)` that drops real-time projection dots and dashed guide lines to the `x-y` and `x-z` planes for clearer decomposition. |
 
 ## Testing
 
