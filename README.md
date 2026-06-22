@@ -76,6 +76,7 @@ manim Manim-CosecantGraph.py CosecantGraph
 | `ComplexPlane03` | `Manim-ComplexPlane03.py` | Same complex plane framework; animates the inversion map `f(z) = 1/z` in two phases: vertical lines `Re(z)=a` collapse into circles centred on the real axis, then horizontal lines `Im(z)=b` collapse into circles centred on the imaginary axis — all circles pass through the origin. |
 | `ComplexPlaneEuler01` | `Manim-ComplexPlane-Euler01.py` | 3D Euler-formula visualization with `x` as input angle, `\sin(x)` in the `x-y` plane, `\cos(x)` in the `x-z` plane, and a red helix `(x, \sin x, \cos x)` showing their combined relationship. |
 | `ComplexPlaneEuler02` | `Manim-ComplexPlane-Euler02.py` | Extends the Euler helix scene with a moving point on `(x, \sin x, \cos x)` that drops real-time projection dots and dashed guide lines to the `x-y` and `x-z` planes for clearer decomposition. |
+| `ComplexPlaneEuler03` | `Manim-ComplexPlane-Euler03.py` | Animates the unit circle from `0` to `2\pi` with a rotating radius, dynamic right-triangle legs labeled `\cos(\theta)` and `\sin(\theta)`, a `\theta` angle marker at the origin, and a moving point labeled `e^{i\theta}` on the circle. |
 
 ## Testing
 
