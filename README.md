@@ -63,6 +63,7 @@ manim Manim-CosecantGraph.py CosecantGraph
 | `Fixed3DText` | `Manim-Fixed3DText.py` | 3D axes scene demonstrating fixed-in-frame text overlay. |
 | `GaussianSurface` | `Manim-GaussianSurface.py` | Plots a Gaussian-like 3D surface over the `(x,y)` plane. |
 | `IrrationalRoot2` | `Manim-Irrational-Root2.py` | Presents a step-by-step contradiction proof that `\sqrt{2}` is irrational, ending with the conclusion and historical caution note alluding to Hippasus. |
+| `IntroCopmlexGeometry0101` | `Manim-IntroComplexGeometry-01-01.py` | Draws a complex plane and animates successive sets of complex points with vectors, point labels, and argument-angle annotations for each point before clearing to the next set. |
 | `LitSphere` | `Manim-LitSphere.py` | 3D parametric surface scene with adjusted light-source position. |
 | `ParabolaTangent` | `Manim-ParabolaTangent.py` | Draws a parabola with a tangent line at a selected point. |
 | `PolarTangent` | `Manim-PolarTangent.py` | Uses polar coordinates to animate a point on a circle with tangent behavior. |
